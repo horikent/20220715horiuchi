@@ -1,0 +1,429 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 0 30px;
+  background-color: white;
+}
+
+.logo-img {
+  width: 40%;
+  cursor: pointer;
+}
+
+
+.header-nav-list {
+  display: flex;
+}
+
+.header-nav-item {
+  color: grey;
+  cursor: pointer;
+}
+
+.header-nav-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+
+.main {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse
+}
+
+.main-img {
+  width: 60%;
+  margin: 0 0 50px auto; 
+}
+
+.img-firstview {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position:relative;
+}
+
+.main-inner {
+  margin: 8px 10px 40px 10px;
+}
+
+.main-ttl {
+  color: rgb(185, 3, 134);
+  padding: 50px 10px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 50px;
+  position:absolute
+}
+
+.main-ttl-grow, .main-copy-grow {
+  color : rgb(2, 149, 129);
+}
+
+.main-copy {
+  color: rgb(185, 3, 134);
+  padding: 5px 10px;
+  position: absolute;
+  top: 180px;
+}
+
+.main-txt {
+  position: absolute;
+  top:210px;
+  left: 20px;
+  font-size: 12px;
+}
+
+
+.news-inner {
+  width: 45%;
+  margin: 30px auto;
+}
+
+.news-ttl {
+  padding-bottom: 10px;
+}
+
+.h4-news-ttl {
+  color:rgb(185, 3, 134);
+  font-family: 'Courier New', Courier, monospace;
+  padding-bottom: 5px;
+  font-size: 10px;
+}
+
+.h2-news-ttl {
+  padding-bottom: 25px;
+  border-bottom: 2px solid rgb(165, 163, 163);
+}
+
+.news-content {
+  display: flex;
+  text-align: center;
+  padding-top: 12px;  
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgb(165, 163, 163);
+  font-size: 10px;
+  color: grey;
+}
+
+.news-content:last-child {
+  border-bottom: 2px solid rgb(165, 163, 163);
+}
+
+.about {
+  background-color: #dedede;
+}
+
+.about-ttl {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 1.3em;
+}
+
+.h4-about-ttl {
+  color: rgb(185, 3, 134);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 10px;
+}
+
+.h2-about-ttl {
+  color: grey;
+  font-weight: bold;
+}
+
+.about-inner {
+  width: 70%;
+  margin: 30px auto;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.about-main {
+  display: flex;
+  width: 100%;
+  padding: 10px 30px;
+}
+
+.about-txt {
+  width: 100%;
+  font-size: 10px;
+  color: grey;
+}
+
+.about-photo {
+  width: 50%;
+  margin: 0 0 50px auto;
+}
+
+
+.service-inner {
+  width: 70%;
+  margin: 50px auto;
+}
+
+.service-ttl {
+  padding-bottom: 10px;
+  line-height: 1.3em;
+}
+
+.h4-service-ttl {
+  color: rgb(185, 3, 134);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 10px;
+}
+
+.h2-service-ttl {
+  color: grey;
+  font-weight: bold;
+}
+
+.service-inner-both {
+  display: grid;
+  grid-template-rows: 2fr 2fr;
+  grid-template-columns: 2fr 2fr;
+  width: 90%;
+}
+
+.service-left-image, .service-rt-image, .service-rb-image{
+  width: 30%;
+}
+
+.service-left-image {
+  padding-left: 75px;
+}
+
+.service-left-txt,
+.service-rt-txt,
+.service-rb-txt {
+  font-size: 8px;
+}
+
+.service-left-ttl{
+  text-align: center;
+}
+
+.service-inner-left {
+  grid-column:1/2;
+  grid-row: 1/3;
+  background-color: rgb(185, 3, 134);
+  padding: 40px 50px;
+  line-height: 1.0em;
+  color: white;
+}
+
+.service-inner-rt,
+.service-inner-rb {
+  padding-bottom: 10px;
+  color: white;
+}
+
+.service-inner-rt-ttl,
+.service-inner-rb-ttl {
+  font-weight: bold;
+  font-size: 12px;
+  padding-bottom: 10px;
+}
+
+.service-rt-txt,
+.service-rb-txt {
+  padding-top: 20px;
+  padding-left: 10px;
+  line-height:  2.0em;
+}
+
+.service-inner-rt {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  background-color: rgba(145, 23, 110, 0.684);
+  display: flex;
+}
+
+.service-inner-rb {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  background-color: rgba(130, 32, 102, 0.167);
+  display: flex;
+}
+
+.blog {
+  marging-top: 300px;
+  background-color: #dedede;
+}
+
+.blog-inner {
+  width: 80%;
+  justify-content: around;
+  padding: 20px 100px;
+}
+
+.blog-ttl {
+  padding-left: 25px;
+  padding: 20px auto 50px 25px;
+}
+
+.h4-blog-ttl {
+  color: rgb(185, 3, 134);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 10px;
+  padding-bottom: 5px;
+}
+
+.h2-blog-ttl {
+  color: grey;
+}
+
+.blog-archive {
+  display: flex;
+  text-align: center;
+}
+
+.blog-archive-item {
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 5px;
+  cursor: pointer;
+  display: flex;
+}
+
+.blog-photo {
+  width: 80%;
+  height: auto;
+}
+
+.brog-archive-item {
+  background: white;
+}
+
+.h3-blog-ttl{
+  font-size: 10px;
+  font: grey;
+  padding: 5px 0;
+}
+
+.blog-dt {
+  font-size: 10px;
+  padding: 5px 0;
+  justify-content: space-around;
+}
+
+.blog-btn {
+  width: 20%;
+  text-align: center;
+  background-color: white;
+  color :rgb(185, 3, 134);
+  border:1px solid rgb(185, 3, 134);
+  border-radius: 5rem;
+  padding: 10px 10px;
+  margin: 5px auto;
+  cursor: pointer;
+}
+
+.company {
+  margin-bottom: 50px;
+}
+
+.company-inner {
+  width: 70%;
+  margin:30px auto 30px 100px;
+}
+
+.company-ttl {
+  margin-left: 100px;
+}
+
+.h4-company-ttl {
+  color: rgb(185, 3, 134);
+  font-family: 'Courier New', Courier, monospace;
+  padding-bottom: 5px;
+  font-size: 10px;
+}
+
+.h2-company-ttl {
+  color: grey;
+  font-weight: bold;
+}
+
+table {
+  width: 60%;
+  margin: 0 auto;
+  border-collapse: collapse;
+} 
+
+table th, 
+table td {
+  border: 1px solid #ccc;
+  padding: 20px; 
+}
+
+table th {
+  font-weight: bold;
+  background-color: #dedede;
+}
+
+.recruit {
+  width:100%;
+  display: flex;
+}
+
+
+
+.recruit-photo, .interview-photo {
+  width: 100%;
+}
+
+.recruit-ttl, .interview-ttl {
+  margin-top: -120px;
+  margin-left: 200px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.contact {
+  text-align: center;
+  margin: 150px auto 50px auto;
+}
+
+.contact-inner {
+  padding: 20px auto;
+}
+
+.contact-txt {
+  padding-bottom: 8px;
+  font-size: 12px;
+  font-weight: bold;
+  color: grey;
+}
+
+.contact-btn {
+  padding: 10px 35px;
+  background: linear-gradient(90deg, hsl(303, 100%, 50%), rgb(185, 3, 134));
+  border-radius: 5rem;
+  color: white;
+  font-size: 8px;
+  cursor: pointer;
+}
+
+.contact-textarea{
+  border: none;
+}
+
+.footer {
+  background-color: #dededea8;
+  height:50px;
+}
+
+p.footer {
+  font-size: 12px;
+  align-items: center;
+  text-align: center;
+  color: grey;
+  padding-top: 25px;
+}
