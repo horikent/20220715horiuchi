@@ -7,13 +7,13 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 70px;
+  height: 50px;
   padding: 0 30px;
   background-color: white;
 }
 
 .logo-img {
-  width: 40%;
+  width: 30%;
   cursor: pointer;
 }
 
@@ -56,8 +56,8 @@ a {
 
 .main-ttl {
   color: rgb(185, 3, 134);
-  padding: 50px 10px;
-  font-family: 'Courier New', Courier, monospace;
+  padding: 50px 150px;
+  font-family: 'Indie Flower', cursive;
   font-size: 50px;
   position:absolute
 }
@@ -68,7 +68,7 @@ a {
 
 .main-copy {
   color: rgb(185, 3, 134);
-  padding: 5px 10px;
+  padding: 5px 150px;
   position: absolute;
   top: 180px;
 }
@@ -76,14 +76,14 @@ a {
 .main-txt {
   position: absolute;
   top:210px;
-  left: 20px;
+  left: 160px;
   font-size: 12px;
 }
 
 
 .news-inner {
   width: 45%;
-  margin: 30px auto;
+  margin: 40px auto;
 }
 
 .news-ttl {
@@ -92,7 +92,7 @@ a {
 
 .h4-news-ttl {
   color:rgb(185, 3, 134);
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Indie Flower', cursive;
   padding-bottom: 5px;
   font-size: 10px;
 }
@@ -112,24 +112,35 @@ a {
   color: grey;
 }
 
-.news-content:last-child {
-  border-bottom: 2px solid rgb(165, 163, 163);
+.news-text-last{
+  position: relative;
+}
+
+.news-text-last::after {
+  content: '';
+  width: 450px;
+  height: 2px;
+  display: inline-block;
+  background-color: rgb(165, 163, 163);;
+  position: absolute;
+  bottom: -30px;
+  left: calc(50% - 200px)
 }
 
 .about {
-  background-color: #dedede;
+  background-color: #f0f0f0;
 }
 
 .about-ttl {
   text-align: center;
-  padding-top: 10px;
+  padding-top: 20px;
   padding-bottom: 10px;
   line-height: 1.3em;
 }
 
 .h4-about-ttl {
   color: rgb(185, 3, 134);
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Indie Flower', cursive;
   font-size: 10px;
 }
 
@@ -152,20 +163,24 @@ a {
 }
 
 .about-txt {
-  width: 100%;
+  width: 150%;
   font-size: 10px;
   color: grey;
+  padding-top: 15px;;
+  text-align: left;
+  line-height: 1.8em;
 }
 
 .about-photo {
   width: 50%;
+  padding-left: 100px;
   margin: 0 0 50px auto;
 }
 
 
 .service-inner {
   width: 70%;
-  margin: 50px auto;
+  margin: 50px 180px;
 }
 
 .service-ttl {
@@ -175,7 +190,7 @@ a {
 
 .h4-service-ttl {
   color: rgb(185, 3, 134);
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Indie Flower', cursive;
   font-size: 10px;
 }
 
@@ -191,13 +206,19 @@ a {
   width: 90%;
 }
 
-.service-left-image, .service-rt-image, .service-rb-image{
-  width: 30%;
+.service-left-image {
+  width: 40%;
+  padding-bottom: 5px;
+  padding-left: 60px;
 }
 
-.service-left-image {
-  padding-left: 75px;
+.service-rt-image,
+.service-rb-image {
+  width: 25%;
+  padding-top: 15px;
+  padding-left: 10px;
 }
+
 
 .service-left-txt,
 .service-rt-txt,
@@ -212,7 +233,7 @@ a {
 .service-inner-left {
   grid-column:1/2;
   grid-row: 1/3;
-  background-color: rgb(185, 3, 134);
+  background-color: rgb(191, 3, 128);
   padding: 40px 50px;
   line-height: 1.0em;
   color: white;
@@ -220,7 +241,7 @@ a {
 
 .service-inner-rt,
 .service-inner-rb {
-  padding-bottom: 10px;
+  padding-bottom: 30px;
   color: white;
 }
 
@@ -248,13 +269,13 @@ a {
 .service-inner-rb {
   grid-column: 2/3;
   grid-row: 2/3;
-  background-color: rgba(130, 32, 102, 0.167);
+  background-color: rgba(69, 22, 56, 0.329);
   display: flex;
 }
 
 .blog {
-  marging-top: 300px;
-  background-color: #dedede;
+  margin-top: 100px;
+  background-color: #f0f0f0;
 }
 
 .blog-inner {
@@ -270,41 +291,48 @@ a {
 
 .h4-blog-ttl {
   color: rgb(185, 3, 134);
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Indie Flower', cursive;
   font-size: 10px;
   padding-bottom: 5px;
 }
 
 .h2-blog-ttl {
   color: grey;
+  padding-bottom: 15px;
 }
 
 .blog-archive {
   display: flex;
   text-align: center;
+  column-count: 3;
 }
 
 .blog-archive-item {
-  width: 100%;
+  width: 90%;
   justify-content: space-between;
-  padding: 0 5px;
   cursor: pointer;
-  display: flex;
 }
 
 .blog-photo {
   width: 80%;
   height: auto;
+  border-radius: 20px 20px 0 0;
 }
 
-.brog-archive-item {
-  background: white;
-}
 
 .h3-blog-ttl{
   font-size: 10px;
   font: grey;
   padding: 5px 0;
+}
+
+.blog-content {
+  background: white;
+  width: 81%;
+  margin-left: 25px;
+  margin-bottom: 10px;
+  border-radius: 0 0 20px 20px;
+  padding: 10px 0;
 }
 
 .blog-dt {
@@ -314,15 +342,16 @@ a {
 }
 
 .blog-btn {
-  width: 20%;
+  width: 15%;
   text-align: center;
   background-color: white;
   color :rgb(185, 3, 134);
   border:1px solid rgb(185, 3, 134);
   border-radius: 5rem;
-  padding: 10px 10px;
-  margin: 5px auto;
+  padding: 10px 5px;
+  margin: 10px auto;
   cursor: pointer;
+  font-size: 10px;
 }
 
 .company {
@@ -336,12 +365,13 @@ a {
 
 .company-ttl {
   margin-left: 100px;
+  margin-bottom: -20px;
 }
 
 .h4-company-ttl {
   color: rgb(185, 3, 134);
-  font-family: 'Courier New', Courier, monospace;
-  padding-bottom: 5px;
+  font-family: 'Indie Flower', cursive;
+  padding-bottom: 10px;
   font-size: 10px;
 }
 
@@ -360,11 +390,14 @@ table th,
 table td {
   border: 1px solid #ccc;
   padding: 20px; 
+  font-size: 14px;
+  color: grey;
 }
 
 table th {
   font-weight: bold;
-  background-color: #dedede;
+  background-color: #f0f0f0;
+  text-align: left;
 }
 
 .recruit {
@@ -384,6 +417,7 @@ table th {
   color: white;
   font-size: 20px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .contact {
@@ -404,20 +438,32 @@ table th {
 
 .contact-btn {
   padding: 10px 35px;
-  background: linear-gradient(90deg, hsl(303, 100%, 50%), rgb(185, 3, 134));
+  background: linear-gradient(90deg, hsl(328, 100%, 66%), rgb(185, 3, 91));
   border-radius: 5rem;
   color: white;
   font-size: 8px;
   cursor: pointer;
+  box-shadow: 0 2px 2px 1px rgb(67, 0, 52);
+  position: relative;
 }
 
-.contact-textarea{
-  border: none;
+.contact-btn::before{
+  position: absolute;
+  content: url(../img/mailicon.svg);
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+}
+
+.contact-line {
+  font-size: large;
+  color: red;
 }
 
 .footer {
-  background-color: #dededea8;
-  height:50px;
+  background-color: #f0f0f0;
+  height:30px;
 }
 
 p.footer {
@@ -425,5 +471,6 @@ p.footer {
   align-items: center;
   text-align: center;
   color: grey;
-  padding-top: 25px;
+  padding-top: 15px;
+  vertical-align: middle;
 }

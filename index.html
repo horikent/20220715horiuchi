@@ -7,6 +7,9 @@
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/style.css" />
   <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
 </head>
   
 <body>
@@ -16,12 +19,12 @@
   </div>    
   <nav class="header-nav">
     <ul class="header-nav-list">
-      <li class="header-nav-item">News</li>
-      <li class="header-nav-item">About</li>
-      <li class="header-nav-item">Service</li>
-      <li class="header-nav-item">Blog</li>
-      <li class="header-nav-item">Company</li>
-      <li class="header-nav-item">Contact</li>
+      <li class="header-nav-item"><a href="#id-news">News</a></li>
+      <li class="header-nav-item"><a href="#id-about">About</a></li>
+      <li class="header-nav-item"><a href="#id-service">Service</a></li>
+      <li class="header-nav-item"><a href="#id-blog">Blog</a></li>
+      <li class="header-nav-item"><a href="#id-company">Company</a></li>
+      <li class="header-nav-item"><a href="#id-contact">Contact</a></li>
     </ul>
   </nav>
 </header>
@@ -37,7 +40,7 @@
   </div>
 </div>
 
-<div class="news">
+<div class="news" id="id-news">
   <div class="news-inner">
     <div class="news-ttl">
       <h4 class="h4-news-ttl">News</h4>
@@ -67,7 +70,7 @@
       <div class="news-content">
         <p class="news-dt">2021/01/01</p>
         <a href="">ニュース</a>
-        <p class="news-text">COACHTECHのサービスが開始されました</p>
+        <p class="news-text-last">COACHTECHのサービスが開始されました</p><br>
       </div>
     </div>  
   </div>
@@ -75,7 +78,7 @@
 
 <div class="about">
   <div class="about-inner">
-    <div class="about-ttl">
+    <div class="about-ttl" id="id-about">
       <h4 class="h4-about-ttl">About</h4>
       <h2 class="h2-about-ttl">Technology × Coaching</h2>
     </div>
@@ -90,7 +93,7 @@
 
 <div class="service">
   <div class="service-inner">
-    <div class="service-ttl">
+    <div class="service-ttl" id="id-service">
       <h4 class="h4-service-ttl">Service</h4>
       <h2 class="h2-service-ttl">サービス内容</h2>
     </div>
@@ -122,29 +125,38 @@
 
 <div class="blog">
   <div class="blog-inner">
-    <div class="blog-ttl">
+    <div class="blog-ttl" id="id-blog">
       <h4 class="h4-blog-ttl">Blog</h4>
       <h2 class="h2-blog-ttl">ブログ</h2>
     </div>
     <div class="blog-archive">
-      <a href="brog-archive-item"></a>
+      <dib class="blog-archive-item" a href="blog-archive-item"></a>
         <div class="blog-img">
           <img class="blog-photo" src="img/blog__first.jpg" alt="" />
+        </div>
+        <div class="blog-content">  
           <h3 class="h3-blog-ttl">プログラミングの勉強方法を<br>特集。挫折しない秘訣とは？</h3>
           <p class="blog-dt">2021/01/01    #COACHTECH</p>
         </div>  
-      <a href="brog-archive-item"></a>
-      <div class="blog-img">
-        <img class="blog-photo" src="img/blog__first.jpg" alt="" />
-        <h3 class="h3-blog-ttl">プログラミングの勉強方法を<br>特集。挫折しない秘訣とは？</h3>
-        <p class="blog-dt">2021/01/01    #COACHTECH</p>
-      </div>
-      <a href="blog-archive-item"></a>
-      <div class="blog-img">
-        <img class="blog-photo" src="img/blog__first.jpg" alt="" />
-        <h3 class="h3-blog-ttl">プログラミングの勉強方法を<br>特集。挫折しない秘訣とは？</h3>
-        <p class="blog-dt">2021/01/01    #COACHTECH</p>
-      </div>
+      </dib>  
+      <dib class="blog-archive-item" a href="blog-archive-item"></a>
+        <div class="blog-img">
+          <img class="blog-photo" src="img/blog__first.jpg" alt="" />
+        </div>
+        <div class="blog-content">
+          <h3 class="h3-blog-ttl">プログラミングの勉強方法を<br>特集。挫折しない秘訣とは？</h3>
+          <p class="blog-dt">2021/01/01 #COACHTECH</p>
+        </div>
+      </dib>
+      <dib class="blog-archive-item" a href="blog-archive-item"></a>
+        <div class="blog-img">
+          <img class="blog-photo" src="img/blog__first.jpg" alt="" />
+        </div>
+        <div class="blog-content">
+          <h3 class="h3-blog-ttl">プログラミングの勉強方法を<br>特集。挫折しない秘訣とは？</h3>
+          <p class="blog-dt">2021/01/01 #COACHTECH</p>
+        </div>
+      </dib>
     </div> 
     <div class="blog-btn"><a href="blog-btn">一覧ページへ</a> 
     </div>  
@@ -153,7 +165,7 @@
 
 <div class="company">
   <div class="company-inner">
-    <div class="company-ttl">
+    <div class="company-ttl" id="id-company">
       <h4 class="h4-company-ttl">Company</h4>
       <h2 class="h2-blog-ttl">会社概要</h2>
     </div>
@@ -197,10 +209,10 @@
   </div>
 </div>  
 
-<div class="contact">
+<div class="contact" id="id-contact">
   <div class="contact-inner">
-    <p class="contact-txt">株式会社estraへのお問い合わせはこちらから</p>
-    <textarea name="textarea" class="contact-textarea"></textarea><br>
+    <p class="contact-txt">株式会社estraへのお問い合わせはこちらから</p><br>
+    <p class="contact-line">|</p><br><br>
     <input type="submit" class="contact-btn" value="お問い合わせ">
   </div>
 </div>
