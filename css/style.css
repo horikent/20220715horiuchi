@@ -319,6 +319,21 @@ a {
   border-radius: 20px 20px 0 0;
 }
 
+.blog-img {
+  position: relative;
+}
+
+.blog-tg {
+  position: absolute;
+  border-radius: 20px 0 0 0;
+  color: white;
+  background-color: rgb(185, 3, 134);
+  padding:10px 10px;
+  font-size: 10px;
+  top: 0;
+  left: 10%;
+}
+
 
 .h3-blog-ttl{
   font-size: 10px;
