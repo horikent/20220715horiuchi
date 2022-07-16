@@ -83,7 +83,8 @@ a {
 
 .news-inner {
   width: 45%;
-  margin: 40px auto;
+  margin: 40px auto 60px auto;
+  position: relative;
 }
 
 .news-ttl {
@@ -122,18 +123,15 @@ a {
   margin: 0 5px;
 }
 
-.news-text-last{
-  position: relative;
-}
 
-.news-text-last::after {
+.news-border {
+  position: absolute;
   content: '';
-  width: 222%;
+  width: 100%;
   height: 2px;
   background-color: rgb(165, 163, 163);
-  position: absolute;
-  bottom: -30px;
-  left: -65%;
+  top: 110%;
+  left: 0;
 }
 
 .about {
@@ -189,7 +187,7 @@ a {
 
 .service-inner {
   width: 70%;
-  margin: 5% 15%;
+  margin: 3% 15%;
 }
 
 .service-ttl {
@@ -462,14 +460,14 @@ table th {
 
 .recruit-ttl{
   position: absolute;
-  top: 50%;
-  left: 43%;
+  top: 49%;
+  left: 42%;
 }
 
 .interview-ttl {
   position: absolute;
-  top: 50%;
-  left: 38%;
+  top: 49%;
+  left: 33%;
 }
 
 .recruit-ttl, .interview-ttl {
