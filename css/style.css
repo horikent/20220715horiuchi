@@ -423,6 +423,7 @@ table th {
 .contact {
   text-align: center;
   margin: 150px auto 50px auto;
+  background-color: grey;
 }
 
 .contact-inner {
@@ -433,10 +434,11 @@ table th {
   padding-bottom: 8px;
   font-size: 12px;
   font-weight: bold;
-  color: grey;
+  color: rgb(201, 199, 199);
 }
 
 .contact-btn {
+  position: relative;
   padding: 10px 35px;
   background: linear-gradient(90deg, hsl(328, 100%, 66%), rgb(185, 3, 91));
   border-radius: 5rem;
@@ -444,16 +446,19 @@ table th {
   font-size: 8px;
   cursor: pointer;
   box-shadow: 0 2px 2px 1px rgb(67, 0, 52);
-  position: relative;
+  z-index: 5;
 }
 
-.contact-btn::before{
+.contact-btn::before {
+  content: "";
   position: absolute;
-  content: url(../img/mailicon.svg);
-  display: inline-block;
-  width: 18px;
-  height: 18px;
-  vertical-align: middle;
+  background: url(../img/mailicon.svg) no-repeat;
+  top: 50%;
+  left: 10px;
+  width: 25px;
+  height: 25px;
+  transform: translate(0, -50%);
+  z-index: 10;
 }
 
 .contact-line {
